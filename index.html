@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/348100/348106.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/281700/281708.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/281600/281635.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="https://wallpapers.com/images/thumbnail/kl-rahul-best-t20-batter-eiuuqc7irw0zam5p.webp" alt=""></div>
+            <div class="item" style="--position: 5"><img src="https://w0.peakpx.com/wallpaper/148/85/HD-wallpaper-rishabh-pant-bcci-delhi-capitals-icc-india-cricket-team-ipl-test-cricket.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN4FWaFibRjI-o79Ws2IiwMluCFR272Mz1Fw&s" alt=""></div>
+            <div class="item" style="--position: 7"><img src="https://i.cdn.newsbytesapp.com/images/l78420240612214857.jpeg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="https://resize.indiatvnews.com/en/resize/newbucket/1080_-/2024/01/untitled-design-2024-01-31t114341-1706681650.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/371600/371647.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="https://i.pinimg.com/736x/45/90/15/45901527c690d327e57da6a478641d64.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="CSS ONLY">
+                CSS ONLY
+            </h1>
+            <div class="author">
+                <h2>Paras</h2>
+                <p><b>Web Design</b></p>
+                <p>
+                    Subscribe to the channel to watch many interesting videos
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
